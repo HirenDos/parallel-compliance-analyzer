@@ -1,0 +1,67 @@
+SAMPLE DOCUMENT — NOT OFFICIAL HUD GUIDANCE
+
+Unified Demo Notice: Section 8 Housing Choice Voucher Program — Income,
+Recertification, and Reporting Requirements (Synthetic Excerpt for Portfolio Testing)
+
+Authority: Synthetic consolidation for engineering demonstration only. This is not
+an authoritative federal register excerpt, handbook chapter, or Notice PIH
+publication. Do not rely on this text for compliance decisions.
+
+1. Purpose and applicability
+This sample chapter summarizes how a fictional Public Housing Agency (PHA) should
+interpret income limits, annual recertification timing, and reporting for the
+Housing Choice Voucher (HCV) program in a demonstration jurisdiction. Where this
+text conflicts with actual HUD regulations, controllers and compliance officers
+must follow the controlling federal sources.
+
+2. Income limits and AMI thresholds (4-person household illustration)
+For the demonstration metro, the PHA must apply the following gross-income limits
+for a four-person household based on percentages of Area Median Income (AMI),
+unless the site is in an exception area published by HUD:
+- At 30% of AMI, the annual income limit for a four-person household is $31,200.
+- At 50% of AMI, the annual income limit for a four-person household is $52,000.
+- At 80% of AMI, the annual income limit for a four-person household is $83,200.
+
+The PHA must verify income using HUD-defined definitions of annual income and
+excluded income. PHAs may not substitute local poverty guidelines for these HUD
+limits when determining program eligibility for this demonstration scenario.
+
+3. Student rule exception (brief reference)
+If a household includes a person who is a student of higher education, the PHA
+must apply the regulatory student rule tests, including exceptions for students
+who meet the independent household criteria described in the controlling guidance.
+Even a passing reference to a student exception must trigger worker review of the
+full student rule checklist before a voucher is issued or recertified.
+
+4. Over-income tenants and continued occupancy
+When a participating household’s income exceeds the applicable income limit after
+admission, the PHA must apply the over-income policies for continued occupancy,
+including any limitations on the length of time a tenant may remain assisted while
+over-income and requirements for re-evaluation when income changes are reported.
+
+5. Annual recertification and timing
+Each assisted household must complete an annual recertification. The PHA must
+complete the annual recertification within one hundred twenty (120) days of the
+anniversary date of the household’s last recertification, unless a different
+window is required by applicable law for a specific funding stream. Failure to
+open the recertification window on time is treated as an administrative defect in
+this demonstration scenario.
+
+6. Non-compliance and enforcement (synthetic penalty language)
+If the PHA materially fails to administer income tests, recertification timing,
+or reporting as described in the Housing Assistance Payments (HAP) contract
+framework, HUD may impose remedial measures up to and including termination of the
+HAP contract for repeated uncorrected non-compliance after notice and opportunity
+to cure. Audits may be triggered when duplicate reporting errors exceed baseline
+thresholds established by HUD for financial and household-data submissions.
+
+7. Required forms and submissions
+PHAs must collect and maintain HUD form HUD-50059 (tenant income and family
+composition verification) as part of the admission and recertification record.
+Annual reporting packages must be submitted electronically through the HUD-
+designated system unless a hardship waiver is documented in the PHA file.
+
+8. Operational reminders
+- Keep page-level transcripts when extracting PDFs so auditors can trace citations.
+- Flag any paragraph that mixes income and enforcement language; this sample does
+  so intentionally to stress-test parallel extraction paths.
