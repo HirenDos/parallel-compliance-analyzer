@@ -25,28 +25,26 @@ This project demonstrates **Fan-Out → Specialized Sub‑Agents → Ranked Synt
 
 ## Architecture
 
-                    ┌─────────────────────┐
-                    │   Orchestrator Agent │
-                    │  (decompose + route) │
-                    └──────────┬──────────┘
-                               │ fan-out (parallel)
-           ┌───────────────────┼───────────────────┐
-           ▼                   ▼                   ▼                   ▼
-  ┌─────────────────┐ ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐
-  │  Income Rules   │ │ Deadline Tracker  │ │ Violation Flags  │ │ Reporting Reqs   │
-  │     Agent       │ │     Agent         │ │     Agent        │ │     Agent        │
-  └────────┬────────┘ └────────┬─────────┘ └────────┬─────────┘ └────────┬──────────┘
-           └───────────────────┴───────────────────┴───────────────────┘
-                                           │ fan-in
-                               ┌──────────▼──────────┐
-                               │  Synthesis Agent     │
-                               │ (rank + consolidate) │
-                               └──────────┬──────────┘
-                                          │
-                               ┌──────────▼──────────┐
-                               │  Compliance Report   │
-                               │  (JSON + Markdown)   │
-                               └─────────────────────┘
+```mermaid
+flowchart TB
+    orchestrator["Orchestrator Agent<br/>decompose + route"]
+    income["Income Rules Agent"]
+    deadline["Deadline Tracker Agent"]
+    violation["Violation Flags Agent"]
+    reporting["Reporting Reqs Agent"]
+    synthesizer["Synthesis Agent<br/>rank + consolidate"]
+    report["Compliance Report<br/>JSON + Markdown"]
+
+    orchestrator -->|fan-out parallel| income
+    orchestrator --> deadline
+    orchestrator --> violation
+    orchestrator --> reporting
+    income -->|fan-in| synthesizer
+    deadline --> synthesizer
+    violation --> synthesizer
+    reporting --> synthesizer
+    synthesizer --> report
+```
 
 ## Why parallel beats sequential here
 
