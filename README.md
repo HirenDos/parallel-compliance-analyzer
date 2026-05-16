@@ -167,3 +167,9 @@ This repository is **Project 1 / 7** in a multi-repo AI agents portfolio aimed a
 showing production-minded orchestration—not notebook demos. The emphasis is typed
 boundaries, audit logs, and honest confidence scoring rather than “magic
 prompts.”
+
+## License
+
+Copyright © 2026 [Hiren Doshi](https://github.com/HirenDos). All rights reserved.
+
+This repository is for portfolio and demonstration purposes only. **Commercial use is not permitted** without prior written permission. See [LICENSE](LICENSE) for full terms.
