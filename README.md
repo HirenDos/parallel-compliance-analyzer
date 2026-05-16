@@ -1,5 +1,7 @@
 # Parallel Compliance Document Analyzer
 
+**Repository:** [github.com/HirenDos/parallel-compliance-analyzer](https://github.com/HirenDos/parallel-compliance-analyzer)
+
 One-line pitch: **a LangGraph “fan-out” pipeline that turns long HUD-style PDFs
 into a ranked compliance checklist by running four specialist agents in parallel,
 then synthesizing their outputs with a final consolidation agent.**
@@ -74,11 +76,19 @@ actually triage risk.
 ## Setup
 
 ```bash
-cd 01-parallel-compliance-analyzer
+git clone https://github.com/HirenDos/parallel-compliance-analyzer.git
+cd parallel-compliance-analyzer
 poetry install
-cp .env.example .env  # add ANTHROPIC_API_KEY
+cp .env.example .env   # set ANTHROPIC_API_KEY (optional: CLAUDE_MODEL)
 poetry run python main.py --input sample_inputs/sample_hud_regulation.txt \
   --program HUD --state CA --output outputs/report.md
+```
+
+PDF input (extracted with `pdfplumber`):
+
+```bash
+poetry run python main.py --input sample_inputs/irs8609.pdf \
+  --program LIHTC --state CA --output outputs/report.md
 ```
 
 Outputs:
