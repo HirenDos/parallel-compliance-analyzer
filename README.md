@@ -86,8 +86,13 @@ PDF input (extracted with `pdfplumber`):
 
 ```bash
 poetry run python main.py --input sample_inputs/irs8609.pdf \
-  --program LIHTC --state CA --output outputs/report.md
+  --program LIHTC --state CA --output outputs/irs8309report.md
 ```
+
+**Sample input and output (review in browser):**
+
+- Input PDF: [sample_inputs/irs8609.pdf](sample_inputs/irs8609.pdf)
+- Output report: [outputs/irs8309report.md](outputs/irs8309report.md) ([JSON](outputs/irs8309report.json))
 
 Outputs:
 
